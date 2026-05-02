@@ -1,0 +1,1 @@
+var e=`/assets/aout-banner-D7GQEvB5.png`;export{e as t};

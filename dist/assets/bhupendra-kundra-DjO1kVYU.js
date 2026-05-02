@@ -1,0 +1,1 @@
+var e=`/assets/bhupendra-kundra-3R5yW47E.jpeg`;export{e as t};

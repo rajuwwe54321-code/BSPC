@@ -1,0 +1,1 @@
+var e=`/assets/contact-banne-Bqmn5wCi.png`;export{e as t};
