@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: #060606;
+}
+
+body {
+  background: transparent;
+  color: #fff;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom styles can be added here */
+@keyframes moltenMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 60%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.molten-bg {
+  background: radial-gradient(circle at 30% 20%, rgba(255,115,0,0.8), transparent 40%),
+              radial-gradient(circle at 70% 60%, rgba(255,140,0,0.6), transparent 50%),
+              linear-gradient(120deg, #000000, #1a1a1a, #000000);
+              
+  background-size: 200% 200%;
+  animation: moltenMove 8s ease-in-out infinite;
+}
+
+@keyframes lineMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
