@@ -38,7 +38,7 @@ import {
   Shield,
 } from "lucide-react";
 import aboutBanner from "../assets/aout-banner.png";
-import omPrakash from "../assets/om-prakash.AVIF"; // ← update filename
+import omPrakash from "../assets/om-prakash.avif";
 import bhupendra from "../assets/bhupendra-kundra.jpeg"; // ← update filename
 const CountUp = ({ target, suffix = "", prefix = "" }) => {
   const ref = useRef(null);
