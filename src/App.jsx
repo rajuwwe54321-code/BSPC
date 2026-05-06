@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy, useEffect } from "react";
 import AnimatedBackground from "./components/AnimatedBackground";
 import Navbar from "./components/Navbar";
@@ -48,7 +48,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <div className="relative min-h-screen overflow-x-hidden bg-transparent text-white">
         <AnimatedBackground />
@@ -68,7 +68,7 @@ function App() {
           <Footer />
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
