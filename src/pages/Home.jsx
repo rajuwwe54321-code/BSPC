@@ -16,7 +16,6 @@ import {
   Mail,
   MessageSquare,
 } from "lucide-react";
-import heroVideo from "../assets/hero.mp4";
 import omPrakash from "../assets/om-prakash.avif";
 import bhupendra from "../assets/bhupendra-kundra.jpeg";
 import { Typewriter } from "react-simple-typewriter";
@@ -239,18 +238,11 @@ export default function Home() {
           ref={ref}
           className="relative h-[80vh] flex items-center justify-center text-center px-4 overflow-hidden"
         >
-          {/* VIDEO BACKGROUND */}
-          <motion.video
+          {/* LIGHTWEIGHT BACKGROUND */}
+          <motion.div
             style={{ scale }}
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-            className="absolute inset-0 w-full h-full object-cover backdrop-blur-[10px]"
-          >
-            <source src={heroVideo} type="video/mp4" />
-          </motion.video>
+            className="hero-cloudflare-bg absolute inset-0"
+          />
 
           {/* DARK OVERLAY */}
           <div className="absolute inset-0 bg-black/30"></div>
